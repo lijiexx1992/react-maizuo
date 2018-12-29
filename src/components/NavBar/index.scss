@@ -1,0 +1,40 @@
+.m-foot {
+  height: 49px;
+  background-color: #fff;
+  border-top: 1px solid #ededed;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  ul {
+      flex-shrink: 0; // 不受兄弟压缩
+      display: flex;
+      height: 100%;
+
+      li {
+          flex: 1;
+
+          a{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            height: 100%;
+            color: #797d82;
+            i {
+                font-size: 20px;
+            }
+
+            span {
+                font-size:12px;
+                text-align: center;
+                margin-top: 4px;
+            }
+            &.active{
+                color: #ff5f16;
+            }
+          }
+      }
+  }
+}

@@ -1,0 +1,51 @@
+.films-list{
+  flex: 1;
+  overflow-y: auto;
+}
+
+.m-top {
+  // width: px2rem(55);
+  height: 30px;
+  color: #fff;
+  line-height:30px;
+  text-align: center;
+  border-radius:15px;
+  background-color: rgba(0, 0, 0, .2);
+  position: absolute;
+  left:7px;
+  top: 18px;
+  padding: 0 5px;
+  z-index: 10;
+  span {
+      font-size: 13px;
+  }
+
+  i {
+       font-size:10px;
+  }
+}
+
+.m-nav {
+  position: sticky;
+  z-index: 999;
+  top:0;
+  height: 50px;
+  border-bottom: 1px solid #ededed;
+  background: #fff;
+  .tab-bar {
+    display: flex;
+    height: 50px;
+    align-items: center;
+    li {
+      flex: 1;
+      text-align: center;
+      font-size: 14px;
+      span {
+        padding: 0 10px;
+      }
+      &.z-act {
+        color: #ff5f16;
+      }
+    }
+  }
+}
